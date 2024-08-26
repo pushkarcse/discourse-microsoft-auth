@@ -47,7 +47,7 @@ describe "Microsoft OAuth2" do
           "client_secret" => client_secret,
           "code" => temp_code,
           "grant_type" => "authorization_code",
-          "redirect_uri" => "http://test.localhost/auth/microsoft_office365/callback",
+          "redirect_uri" => "https://test.localhost/auth/microsoft_office365/callback",
         ),
     ).to_return(
       status: 200,
@@ -83,7 +83,7 @@ describe "Microsoft OAuth2" do
          }
 
     expect(response.status).to eq(302)
-    expect(response.location).to eq("http://test.localhost/")
+    expect(response.location).to eq("https://test.localhost/")
     expect(session[:current_user_id]).to eq(user1.id)
   end
 
@@ -106,7 +106,7 @@ describe "Microsoft OAuth2" do
          }
 
     expect(response.status).to eq(302)
-    expect(response.location).to eq("http://test.localhost/")
+    expect(response.location).to eq("https://test.localhost/")
     expect(session[:current_user_id]).to eq(nil)
   end
 end
