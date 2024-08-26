@@ -11,8 +11,8 @@ module OmniAuth
 
       option :client_options,
              site: "https://login.microsoftonline.com",
-             authorize_url: "/common/oauth2/v2.0/authorize",
-             token_url: "/common/oauth2/v2.0/token"
+             authorize_url: "/906aefe9-76a7-4f65-b82d-5ec20775d5aa/oauth2/v2.0/authorize",
+             token_url: "/906aefe9-76a7-4f65-b82d-5ec20775d5aa/oauth2/v2.0/token"
 
       option :authorize_options, [:scope]
 
