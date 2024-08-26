@@ -42,7 +42,7 @@ module OmniAuth
       end
 
       def callback_url
-        "https://ciec-ama.sys.comcast.net/auth/microsoft_office365/callback"
+        "http://techquery.sys.comcast.net/auth/microsoft_office365/callback"
       end
     end
   end
