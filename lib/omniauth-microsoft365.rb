@@ -42,7 +42,7 @@ module OmniAuth
       end
 
       def callback_url
-        full_host + script_name + callback_path
+        "https://ciec-ama.sys.comcast.net/auth/microsoft_office365/callback"
       end
     end
   end
